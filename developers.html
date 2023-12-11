@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Developers</title>
+    <style>
+        /* Additional styles specific to developers.html can be added here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        .back-button {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 12px;
+            background-color: #555;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .developer-section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="{{ url_for('home') }}" class="back-button">&lt; Back</a>
+        <h1>Meet the Developers</h1>
+    </header>
+
+    <div class="developer-section">
+        <h2>Developers</h2>
+        <p>Jason Seraphim</p>
+        <p>Kanchan Karmakar</p>
+        <p>Ujjwal Sancheti</p>
+        <p>Kirti Sharma</p>
+
+        <!-- Add more developer information as needed -->
+    </div>
+
+    <footer>
+        
+    </footer>
+
+</body>
+
+</html>
